@@ -1,5 +1,4 @@
 "use strict"
-alert(window.innerWidth);
 window.onload = function() {
   const parallax = document.querySelector('.parallax');
     if (parallax) {
