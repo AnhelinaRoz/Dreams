@@ -890,7 +890,7 @@ function render(target) {
 
     if (!config.TRANSPARENT) {
         colorProgram.bind();
-        blit(target);
+        blit(target);  
     }
 
     if (target == null && config.TRANSPARENT) {

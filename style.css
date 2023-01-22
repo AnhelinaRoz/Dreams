@@ -21,13 +21,22 @@ header {
   display: grid;
   grid-template-rows: auto 1fr auto;
   align-items: center;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   overflow: hidden;
 }
 
 header .header_nav {
   display: grid;
   grid-template-columns: 1fr auto;
+  padding: 20px 30px;
+}
+
+header .burger .line {
+  height: 2px;
+  width: 20px;
+  background: white;
+  margin: 3px 0;
+  border-radius: 20px;
 }
 
 header .text {
@@ -112,14 +121,24 @@ header .scroll {
   padding-bottom: 10px;
 }
 
-.service {
-  background: white;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  padding: 50px 200px;
+.paralax_wrapper {
   position: relative;
   z-index: 4;
+  background: white;
+  padding: 50px 200px;
+}
 
+.paralax_wrapper .img {
+  min-height: 600px;
+  min-width: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto 800px;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 .service .textwrapper {
@@ -149,23 +168,13 @@ header .scroll {
 }
 
 .service .img {
-    background-image: url("2.JPG");
-    min-height: 600px;
-    min-width: 500px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto 800px;
-    background-position-x: 782px, right;
-
+  background-image: url("2.JPG");
+  background-position-x: 50vw;
 }
 
 .smm {
-  background: white;
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 50px 200px;
-  position: relative;
-  z-index: 4;
 }
 
 .smm .text2 h3 {
@@ -176,21 +185,16 @@ header .scroll {
   text-align: center;
 }
 
-.smm .img2 {
+.smm .img {
   background-image: url("1.png");
-  min-height: 600px;
-  min-width: 500px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 400px auto;
   background-position-x: 200px;
 }
 
-.smm .textwrapper2 {
+.smm .textwrapper {
   position: relative;
 }
 
-.smm .text2 {
+.smm .text {
   color: white;
   background-color: black;
   padding: 40px;
@@ -271,7 +275,7 @@ footer {
   opacity: 0.5;
 }
 
-.text2 a {
+.text a {
   margin-top: 10px;
   display: inline-block;
   text-decoration: none;
@@ -303,4 +307,83 @@ footer {
   outline: 0 none;
   color: #fff;
   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+@media screen and (max-width: 1030px) {
+  .paralax_wrapper {
+    padding: 20px;
+  }
+
+  .paralax_wrapper .img {
+    max-width: 400px;
+    width: 400px;
+    min-width: 400px;
+    background-size: auto 713px;
+  }
+
+  .service .img {
+    background-position-x: calc(100vw - 400px - 20px);
+  }
+
+  .smm .img {
+    background-position-x: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .header_nav p {
+    font-size: 20px;
+  }
+
+  header .text h1 {
+    font-size: 80px;
+  }
+
+  header .text a {
+    font-size: 25px;
+  }
+
+  .paralax_wrapper {
+    display: block;
+  }
+
+  .paralax_wrapper .textwrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .paralax_wrapper .text {
+    position: static;
+    width: 350px;
+    margin: 0;
+  }
+  .paralax_wrapper .img {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    background-size: auto 713px;
+  }
+  .RequestAProposal form {
+    width: 90%;
+  }
+  footer{
+    padding: 50px 20px 150px;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  footer .inf h3{
+    font-size: 14px;
+  }
+  footer .inf *{
+    padding-left: 0;
+    padding-right: 0;
+font-size: 14px;
+  }
+  footer .logo img{
+    width: 100px;
+  }
+
 }
