@@ -363,7 +363,8 @@ footer {
     max-width: 100%;
     width: 100%;
     min-width: 100%;
-    background-size: auto 713px;
+    background-size: auto 600px;
+    background-attachment: fixed;
   }
   .RequestAProposal form {
     width: 90%;
