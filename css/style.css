@@ -19,7 +19,9 @@ h1, h2, h3, h4, p, a, span, li, input, textarea, button, img {
     display: block;
     height: 700px;
 }
-
+.body .left_img{
+/*margin-left: auto;*/
+}
 header {
     /* background: #1a1a1a; */
     background: black;
@@ -157,6 +159,10 @@ header .scroll {
     background-size: auto 800px;
 }
 
+.parallax_label h3{
+    margin-bottom: 8px;
+    text-align: center;
+}
 .text_wrapper {
     z-index: 22;
 }
