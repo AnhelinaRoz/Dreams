@@ -17,7 +17,7 @@ ul {
     margin-bottom: 30px;
 }
 
-li:before {
+section li:before {
     content: '• ';
     color: #2AA5A0;
 }
