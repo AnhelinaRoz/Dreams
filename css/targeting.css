@@ -1,0 +1,39 @@
+
+section {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+li:before {
+    content: '• ';
+    color: #2AA5A0;
+}
+
+button {
+    margin: auto;
+    display: block;
+    padding: 10px 35px;
+    border-radius: 4px;
+    background-image: linear-gradient(90deg, #9453e3, #2AA5A0);
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+}
