@@ -11,7 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87596e47-d6a9-44f1-b297-76fb928a7697" name="Default Changelist" comment="ок">
+      <change afterPath="$PROJECT_DIR$/css/m.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/webd.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/webd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/autre.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/autre.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/targeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/targeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webd.html" beforeDir="false" afterPath="$PROJECT_DIR$/webd.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -94,9 +104,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1674405595145" />
-    <state x="385" y="196" key="search.everywhere.popup" timestamp="1675713784593">
+    <state x="385" y="210" key="run.anything.popup" timestamp="1676829657611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1675713784593" />
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1676829657611" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1676829778662">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1676829778662" />
   </component>
 </project>

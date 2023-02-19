@@ -1,40 +1,57 @@
-#web-development {
+.skill header h1{
+    background-image: linear-gradient(90deg, #9453e3, #2AA5A0);
+    -webkit-text-fill-color: inherit;
+    color: white;
+}
+.skill .header_nav{
+    background: none;
+    transition-duration: .2s;
+}
+.skill .header_nav.background{
+    background: black;
+}
+.skill .header_nav li{
+    background: rgba(40,40,40, 0.2  );
+    border-radius: 4px;
+    padding: 5px;
+}
+.web-development{
     background-color: black;
     color: white;
     padding: 50px;
 }
 
-#web-development h2 {
+.web-development h2 {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
 }
 
-#web-development h3 {
+.web-development h3 {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-#web-development p {
+.web-development p {
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 20px;
 }
 
-#web-development ul {
+.web-development ul {
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 20px;
 }
 
-#web-development li {
+.web-development li {
     margin-bottom: 10px;
 }
 
-#web-development button {
+.web-development button {
     margin: auto;
     display: block;
     padding: 10px 35px;
@@ -44,14 +61,14 @@
     outline: 0;
     color: white;
 }
-#web-development ul {
+.web-development ul {
     list-style: none;
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
 }
 
-#web-development li:before {
+.web-development li:before {
     content: '• ';
     color: #2AA5A0;
 }

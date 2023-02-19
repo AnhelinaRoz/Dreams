@@ -2,25 +2,38 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/webd.css">
+    <link rel="stylesheet" href="css/m.css">
     <title>Dream Marketing</title>
 </head>
 
-<body>
-<header>
-    <div class="canvas_background_wrapper">
-        <canvas class="paints canvas_background" width="11" height="122"></canvas>
-    </div>
+<body class="skill">
+<header class="container_header">
     <div class="header_nav">
         <p>Marketing agency</p>
-        <div class="burger">
+
+        <ul class="spisok">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+
+        <div class="burger" onclick="openBurger(this)">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+            <div class="burgerContent hideBlock">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="text">
@@ -30,16 +43,29 @@
         <p>scroll to discover</p>
     </div>
 </header>
-<section id="web-development">
+<section id="web-development" class = "web-development">
     <h2>Web Development - Create Your Dream Website</h2>
-    <p>Our team of experienced web developers can create a custom website for your business that is tailored to your specific needs and goals. Whether you're looking to build a simple brochure site or a complex e-commerce platform, we have the skills and expertise to bring your vision to life.</p>
-    <p>In today's digital age, having a great website is more important than ever. Your website is often the first point of contact that potential customers have with your brand, and it's critical to make a strong first impression. A great website can help you establish credibility, build trust, and showcase your products or services in the best possible light.
+    <p>Our team of experienced web developers can create a custom website for your business that is tailored to your
+        specific needs and goals. Whether you're looking to build a simple brochure site or a complex e-commerce
+        platform, we have the skills and expertise to bring your vision to life.</p>
+    <p>In today's digital age, having a great website is more important than ever. Your website is often the first point
+        of contact that potential customers have with your brand, and it's critical to make a strong first impression. A
+        great website can help you establish credibility, build trust, and showcase your products or services in the
+        best possible light.
 
-        At Dreams Agency, we understand the importance of having a website that stands out from the crowd. Our team of expert developers has years of experience creating custom websites that are tailored to your unique needs and goals. We work closely with you to understand your brand and vision, and we use our expertise to craft a website that truly reflects your business.
+        At Dreams Agency, we understand the importance of having a website that stands out from the crowd. Our team of
+        expert developers has years of experience creating custom websites that are tailored to your unique needs and
+        goals. We work closely with you to understand your brand and vision, and we use our expertise to craft a website
+        that truly reflects your business.
 
-        We focus on every detail to ensure your website looks great, functions flawlessly, and drives results for your business. With our focus on user experience, search engine optimization, and cutting-edge technology, you can trust us to create a website that will help you achieve your business goals and stand out in a crowded online marketplace.
+        We focus on every detail to ensure your website looks great, functions flawlessly, and drives results for your
+        business. With our focus on user experience, search engine optimization, and cutting-edge technology, you can
+        trust us to create a website that will help you achieve your business goals and stand out in a crowded online
+        marketplace.
 
-        Don't settle for a generic website that fails to capture the essence of your brand. Contact Dreams Agency today and let us help make the website of your dreams a reality. With our passion for excellence and commitment to your success, we're confident we can help you take your online presence to the next level.
+        Don't settle for a generic website that fails to capture the essence of your brand. Contact Dreams Agency today
+        and let us help make the website of your dreams a reality. With our passion for excellence and commitment to
+        your success, we're confident we can help you take your online presence to the next level.
 
     </p>
     <h3>Our Web Development Services Include:</h3>
@@ -52,7 +78,7 @@
     </ul>
 
     <button>Contact Us</button>
-    <script src="autre.js"></script>
+
 </section>
 <footer>
     <div class="logo">
@@ -67,5 +93,6 @@
         </ul>
     </div>
 </footer>
+<script src="js/autre.js"></script>
 </body>
 </html>
