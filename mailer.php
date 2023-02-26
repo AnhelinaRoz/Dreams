@@ -34,10 +34,10 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // Дополнительные заголовки
-$headers[] = 'To: Mary <mary@example.com>, Kelly <kelly@example.com>';
-$headers[] = 'From: Birthday Reminder <birthday@example.com>';
-$headers[] = 'Cc: birthdayarchive@example.com';
-$headers[] = 'Bcc: birthdaycheck@example.com';
+$headers .=  'To: Mary <mary@example.com>, Kelly <kelly@example.com>';
+$headers .=  'From: Birthday Reminder <birthday@example.com>';
+$headers .=  'Cc: birthdayarchive@example.com';
+$headers .=  'Bcc: birthdaycheck@example.com';
 
 // Отправляем
 mail($to, $subject, $message, implode("\r\n", $headers));
