@@ -13,6 +13,10 @@
 .mobile{
     display: none;
 }
+.pc a, .mobile a{
+    font: inherit;
+    color: inherit;
+}
 a {
     font: inherit;
 }
