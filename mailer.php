@@ -3,10 +3,11 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $text = $_POST["text"];
 $to      = 'info@dreamsagency.net';
-$subject = 'the subject';
-$message = "
-<h1>Request</h1>
-<strong>Email</strong> $email 
+$subject = 'Request';
+$message = " 
+Email $email 
+name $name
+text $text
 ";
 
 $headers = 'From: webmaster@example.com' . "\r\n" .
