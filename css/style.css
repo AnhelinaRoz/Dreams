@@ -10,6 +10,9 @@
 .hideBlock{
     display: none;
 }
+.mobile{
+    display: none;
+}
 a {
     font: inherit;
 }
@@ -382,6 +385,11 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    .pc{
+        display: none;
+    }.mobile{
+         display: block;
+     }
     .header_nav .spisok {
         display: none;
     }

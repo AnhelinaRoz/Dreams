@@ -48,7 +48,8 @@
         <a href="https://uahelp.monobank.ua/">#<span class="blue">Support</span><span class="yellow">Ukraine</span></a>
     </div>
     <div class="scroll">
-        <p>scroll to discover</p>
+        <p class="pc"><a href="#about">scroll to discover</a></p>
+        <p class="mobile" ><a href="#about">tap to discover</a></p>
     </div>
 </header>
 <div id="about" class="service parallax parallax_wrapper">
@@ -98,12 +99,12 @@
         <p></p>
     </div>
     <h2>REQUEST A PROPOSAL</h2>
-    <form class="" action="index.html" method="post">
-        <input placeholder="Your E-mail" type="email">
-        <input placeholder="Your name" type="text">
-        <textarea name="name" placeholder="Tell us your goal!" rows="8" cols="80"></textarea>
+    <form class="" action="mailer.php" method="post">
+        <input name="name" placeholder="Your E-mail" type="email">
+        <input name="email" placeholder="Your name" type="text">
+        <textarea name="text" placeholder="Tell us your goal!" rows="8" cols="80"></textarea>
         <div class="button">
-            <button type="button" name="button">Send</button>
+            <button type="submit" name="button">Send</button>
         </div>
     </form>
 </div>
