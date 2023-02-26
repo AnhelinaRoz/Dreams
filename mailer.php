@@ -4,7 +4,10 @@ $email = $_POST["email"];
 $text = $_POST["text"];
 $to      = 'info@dreamsagency.net';
 $subject = 'the subject';
-$message = 'hello';
+$message = "
+<h1>Request</h1>
+<strong>Email</strong> $email 
+";
 
 $headers = 'From: webmaster@example.com' . "\r\n" .
     'Reply-To: webmaster@example.com' . "\r\n" .
