@@ -1,16 +1,30 @@
 // const web_development = document.querySelector("#web-development");
 const container_header = document.querySelector(".container_header")
 // console.log(web_development.offsetHeight)
+var canvas = document.createElement("canvas");
+let width, height;
 window.addEventListener("scroll", function(e){
     if(pageYOffset > 760){
         container_header.querySelector(".header_nav").classList.add("background")
+        width = canvas.width = window.innerWidth * 0.75;
+ height = canvas.height = window.innerHeight * 0.75;
     }else {
         container_header.querySelector(".header_nav").classList.remove("background")
+        // width = canvas.width = 800;
+        // height = canvas.height = 700;
     }
 })
-var canvas = document.createElement("canvas");
-var width = canvas.width = window.innerWidth * 0.75;
-var height = canvas.height = window.innerHeight * 0.75;
+
+if(innerWidth > 560){
+
+    width = canvas.width = window.innerWidth * 0.75;
+    height = canvas.height = window.innerHeight * 0.75;
+}else {
+
+    width = canvas.width = 800;
+    height = canvas.height = 700;
+}
+
 
 container_header.appendChild(canvas);
 var gl = canvas.getContext('webgl');
