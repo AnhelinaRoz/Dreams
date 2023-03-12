@@ -72,3 +72,8 @@
     content: '• ';
     color: #2AA5A0;
 }
+@media screen and (max-width: 450px) {
+    .container_header canvas {
+        width: 300%;
+    }
+}
