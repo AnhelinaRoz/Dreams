@@ -8,12 +8,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/itc-slider.css">
+    <!-- JavaScript -->
+    <script src="/assets/itc-slider.js" defer></script>
     <link rel="stylesheet" href="css/css.css?5624526">
     <link rel="stylesheet" href="css/style.css?2223460">
     <link rel="stylesheet" href="assets/style.css?23469">
     <title>Dream Marketing</title>
     <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="0"><!-- CSS -->
+
 </head>
 
 <body class="body">
@@ -23,14 +27,14 @@
     </div>
     <div class="header_nav">
         <p>Marketing agency</p>
-<div class="language">
-    <img src="res/language.svg" alt="">
-</div>
-            <ul class="spisok">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
+        <div class="language">
+            <img src="res/language.svg" alt="">
+        </div>
+        <ul class="spisok">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">ABOUT</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
 
         <div class="burger" onclick="openBurger(this)">
             <div class="line"></div>
@@ -51,14 +55,59 @@
     </div>
     <div class="scroll">
         <p class="pc"><a href="#about">scroll to discover</a></p>
-        <p class="mobile" ><a href="#about">tap to discover</a></p>
+        <p class="mobile"><a href="#about">tap to discover</a></p>
     </div>
 </header>
-<div id="about" class="service parallax parallax_wrapper">
+<div class="about-us-block">
+    <h2 class="title2">About Us</h2>
+    <p>Welcome to Dreams, a modern and forward-thinking marketing agency that specializes in targeted marketing and web
+        development. We understand that the world of marketing is constantly evolving, and that's why we stay ahead of
+        the curve, always looking for innovative and creative solutions to help our clients achieve their goals.
+        Our team is made up of experienced marketing professionals and talented developers who are passionate about
+        creating effective marketing strategies and building engaging and user-friendly websites. We believe that every
+        business is unique, and that's why we take a tailored approach to every project we work on. We take the time to
+        get to know our clients, their goals, and their target audience, so that we can create customized solutions that
+        are perfectly suited to their needs.
+        Whether you're looking to increase your online presence, generate leads, or drive sales, we have the expertise
+        and tools to help you achieve your goals. From targeted advertising campaigns to stunning and functional
+        websites, we have everything you need to take your business to the next level.
+        At Dreams, we're committed to delivering exceptional results and outstanding customer service. We're always here
+        to answer your questions, offer support, and provide guidance every step of the way. So why not get in touch
+        today and let us help you turn your dreams into reality?</p>
+</div>
+<div class="about_mobile_wrapper">
+<div class="about_mobile web">
+    <div class="text">
+        <div>
+            <h2>Web Development</h2>
+            <a href="webd.html" class="glow ">Learn more</a>
+        </div>
+        <img src="фон 2.png" alt="">
+
+
+    </div>
+</div>
+<div class="about_mobile targeting">
+    <div class="text">
+        <div>
+            <h2>Targeting</h2>
+            <a href="webd.html" class="glow ">Learn more</a>
+        </div>
+        <img src="targetgirl.png" alt="">
+    </div>
+</div>
+</div>
+<div id="about" class="about_pc service parallax parallax_wrapper">
     <div class="text_wrapper">
         <div class="text parallax_label">
             <h3>Web Development</h3>
-            <p>Take your online presence to the next level with Dreams Agency's Web Development service. Our team of experienced developers specializes in creating custom websites that are tailored to your specific needs and goals. Whether you're looking to build a simple brochure site or a complex e-commerce platform, we have the skills and expertise to bring your vision to life. With our focus on user experience and search engine optimization, you can trust us to create a website that not only looks great, but also drives results for your business. Don't settle for a generic website – contact us today to learn how we can help you create a website that truly reflects your brand and business.</p>
+            <p>Take your online presence to the next level with Dreams Agency's Web Development service. Our team of
+                experienced developers specializes in creating custom websites that are tailored to your specific needs
+                and goals. Whether you're looking to build a simple brochure site or a complex e-commerce platform, we
+                have the skills and expertise to bring your vision to life. With our focus on user experience and search
+                engine optimization, you can trust us to create a website that not only looks great, but also drives
+                results for your business. Don't settle for a generic website – contact us today to learn how we can
+                help you create a website that truly reflects your brand and business.</p>
             <a href="webd.html" class="glow ">Learn more</a>
         </div>
     </div>
@@ -74,7 +123,7 @@
     </div>
 </div>
 
-<div class="smm parallax parallax_wrapper">
+<div class="about_pc smm parallax parallax_wrapper">
     <div class="d-flex">
         <div class="image left_img"
              style="background: url('res/2.JPG') no-repeat center; background-size: cover;"
@@ -93,10 +142,120 @@
         </div>
     </div>
 </div>
-<div id="contact" class="RequestAProposal">
-    <div class="canvas_background_wrapper">
-        <canvas class="paints canvas_background" width="11" height="122"></canvas>
+<div class="blog">
+    <div class="container">
+        <h2 class="title2">Blog</h2>
+        <div class="itc-slider" data-slider="itc-slider" data-autoplay="false" data-loop="1000">
+            <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                        <a href="#">
+                            <div class="img"><img src="audience.webp" alt=""></div>
+                            <div class="text">
+                                <p class="date">March 28, 2023</p>
+                                <h3>Understanding Your Target Audience: Tips and Strategies</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="itc-slider__item">
+                        <a href="#">
+                            <div class="img"><img src="targetaudience.webp" alt=""></div>
+                            <div class="text">
+                                <p class="date">January 18, 2023</p>
+                                <h3>The Power of Personalization: Tips for Customizing Your Website to Your Target Audience</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="itc-slider__item">
+                        <a href="#">
+                            <div class="img"><img src="blogstr.jpeg" alt=""></div>
+                            <div class="text">
+                                <p class="date">March 23, 2023 </p>
+                                <h3>How to Create an Effective Blog Strategy for Your Website</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="itc-slider__item">
+                        <a href="#">
+                            <div class="img"><img src="storytelling.png" alt=""></div>
+                            <div class="text">
+                                <p class="date">February 20, 2023 </p>
+                                <h3>The Power of Storytelling in Website Content: How to Engage Your Audience and Build Connections</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="itc-slider__item">
+                        <a href="#">
+                            <div class="img"><img src="multilingual.jpeg" alt=""></div>
+                            <div class="text">
+                                <p class="date">January 1, 2023 </p>
+                                <h3>The Benefits and Challenges of Creating a Multilingual Website</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="itc-slider__item">
+                        <a href="#">
+                            <div class="img"><img src="productivity.png" alt=""></div>
+                            <div class="text">
+                                <p class="date">December 27, 2022</p>
+                                <h3>10 Ways to Boost Your Productivity at Work</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button>
+        </div>
     </div>
+</div>
+<!--<div class="blog-block">-->
+<!--    <h2>Blog</h2>-->
+<!--    <ul>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <img src="audience.webp" alt="">-->
+<!--                <h3>Understanding Your Target Audience: Tips and Strategies</h3>-->
+<!--                <span class="date">January 1, 2023</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <img src="article2.jpg" alt="">-->
+<!--                <h3>Article 2</h3>-->
+<!--                <span class="date">February 15, 2023</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <img src="article3.jpg" alt="">-->
+<!--                <h3>Article 3</h3>-->
+<!--                <span class="date">March 28, 2023</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <img src="article4.jpg" alt="">-->
+<!--                <h3>Article 4</h3>-->
+<!--                <span class="date">April 12, 2023</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <img src="article5.jpg" alt="">-->
+<!--                <h3>Article 5</h3>-->
+<!--                <span class="date">May 20, 2023</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+
+<div id="contact" class="RequestAProposal">
+<!--    <div class="canvas_background_wrapper">-->
+<!--&lt;!&ndash;        <canvas class="paints canvas_background" width="11" height="122"></canvas>&ndash;&gt;-->
+<!--    </div>-->
     <div class="scroll">
         <p></p>
     </div>
@@ -134,7 +293,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <!--paroller.js-->
 <script src="dist/jquery.paroller.js"></script>
-<script src="assets/main.js"></script>
+<script src="js/extra.js"></script>
+<script src="assets/main.js?522"></script>
 <script>
     $(document)
         .ready(function () {

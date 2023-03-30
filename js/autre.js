@@ -178,3 +178,4 @@ canvas.onmousemove = function(e) {
     mouse.y = e.clientY;
 }
 console.log(1)
+

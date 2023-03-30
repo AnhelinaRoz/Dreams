@@ -10,9 +10,9 @@
                     .animate({ scrollTop: $(window.location.hash).scrollTop() }, 1);
             } else {
                 setTimeout(function () {
-                    $("html, body")
-                        .animate({scrollTop: $(document).height()}, 1)
-                        .animate({scrollTop: $("#download").scrollTop()}, 1);
+                    // $("html, body")
+                        // .animate({scrollTop: $(document).height()}, 1)
+                        // .animate({scrollTop: $("#download").scrollTop()}, 1);
                     $('body').removeClass('is-loading').addClass('init-paroller');
                 }, 1200);
             }
