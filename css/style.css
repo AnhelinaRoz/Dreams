@@ -10,7 +10,7 @@
 
 .about-us-block {
     background-color: white;
-    padding: 40px 200px;
+    padding: 60px 200px;
     /*border-radius: 10px ;*/
     /*margin-bottom: 40px;*/
     display: flex;
@@ -585,6 +585,7 @@ footer {
         margin-bottom: 0;
     }
     .about-us-block{
+
         padding-left: 10px;
         padding-right: 10px;
     }
