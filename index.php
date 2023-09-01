@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -8,12 +11,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/assets/itc-slider.css">
+    <link rel="stylesheet" href="assets/itc-slider.css">
     <!-- JavaScript -->
-    <script src="/assets/itc-slider.js" defer></script>
-    <link rel="stylesheet" href="css/css.css?562244526">
-    <link rel="stylesheet" href="css/style.css?2567886565560">
-    <link rel="stylesheet" href="assets/style.css?20452345789">
+    <script src="assets/itc-slider.js?<?=date("Y-m-d H:i:s")?>" defer></script>
+    <link rel="stylesheet" href="css/css.css?<?=date("Y-m-d H:i:s")?>">
+    <link rel="stylesheet" href="css/style.css?<?=date("Y-m-d H:i:s")?>">
+    <link rel="stylesheet" href="assets/style.css?<?=date("Y-m-d H:i:s")?>">
     <title>Dream Marketing</title>
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0"><!-- CSS -->
@@ -21,38 +24,54 @@
 </head>
 
 <body class="body">
+<script>
+    let get = "<?=$_GET["block"]?>"
+    console.log(get)
+</script>
 <header id="home">
     <div class="canvas_background_wrapper">
         <canvas class="paints canvas_background" width="11" height="122"></canvas>
     </div>
-    <div class="header_nav">
-        <p>Marketing agency</p>
-        <div class="language">
-            <img src="res/language.svg" alt="">
-        </div>
-        <ul class="spisok">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#information">ABOUT US</a></li>
-            <li><a href="#about">SERVICES</a></li>
-            <li><a href="#blogy">BLOG</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
-        </ul>
-
-        <div class="burger" onclick="openBurger(this)">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="burgerContent hideBlock">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#information">ABOUT US</a></li>
-                    <li><a href="#about">SERVICES</a></li>
-                    <li><a href="#blogy">BLOG</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php include ("components/header.php")?>
+<!--    <div class="header_nav">-->
+<!--        <p>Marketing agency</p>-->
+<!--        <div class="language">-->
+<!--            <img src="res/language.svg" alt=""onclick="open_language(this)">-->
+<!---->
+<!--            <ul>-->
+<!--                <li><a href="index.php?language=1">RU</a></li>-->
+<!--                <li><a href="index.php?language=2">ENG</a></li>-->
+<!--                <li><a href="index.php?language=3">FR</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <ul class="spisok">-->
+<!---->
+<!--            <li><a href="#home">--><?php //=translate($query_main,"home");?><!--</a></li>-->
+<!--            <li><a href="#information">--><?php //=translate($query_main,"about us");?><!--</a></li>-->
+<!--            <li><a href="#about">--><?php //=translate($query_main,"services");?><!--</a></li>-->
+<!--            <li><a href="#blogy">--><?php //=translate($query_main,"blog");?><!--</a></li>-->
+<!--            <li><a href="#contact">--><?php //=translate($query_main,"contact us");?><!--</a></li>-->
+<!--        </ul>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--        <div class="burger" onclick="openBurger(this)">-->
+<!--            <div class="line"></div>-->
+<!--            <div class="line"></div>-->
+<!--            <div class="line"></div>-->
+<!--            <div class="burgerContent hideBlock">-->
+<!--                <ul>-->
+<!--                    <li><a href="#home">HOME</a></li>-->
+<!--                    <li><a href="#information">ABOUT US</a></li>-->
+<!--                    <li><a href="#about">SERVICES</a></li>-->
+<!--                    <li><a href="#blogy">BLOG</a></li>-->
+<!--                    <li><a href="#contact">CONTACT US</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="text">
         <h1>Dreams</h1>
         <a href="https://uahelp.monobank.ua/">#<span class="blue">Support</span><span class="yellow">Ukraine</span></a>
@@ -62,29 +81,19 @@
         <p class="mobile"><a href="#about">tap to discover</a></p>
     </div>
 </header>
+
+
+
 <div id="information" class="about-us-block">
     <h2 class="title2">About Us</h2>
-    <p>Welcome to Dreams, a modern and forward-thinking marketing agency that specializes in targeted marketing and web
-        development. We understand that the world of marketing is constantly evolving, and that's why we stay ahead of
-        the curve, always looking for innovative and creative solutions to help our clients achieve their goals.
-        Our team is made up of experienced marketing professionals and talented developers who are passionate about
-        creating effective marketing strategies and building engaging and user-friendly websites. We believe that every
-        business is unique, and that's why we take a tailored approach to every project we work on. We take the time to
-        get to know our clients, their goals, and their target audience, so that we can create customized solutions that
-        are perfectly suited to their needs.
-        Whether you're looking to increase your online presence, generate leads, or drive sales, we have the expertise
-        and tools to help you achieve your goals. From targeted advertising campaigns to stunning and functional
-        websites, we have everything you need to take your business to the next level.
-        At Dreams, we're committed to delivering exceptional results and outstanding customer service. We're always here
-        to answer your questions, offer support, and provide guidance every step of the way. So why not get in touch
-        today and let us help you turn your dreams into reality?</p>
+   <p><?=translate($query_main,"about_text_blog");?></p>
 </div>
 <div class="about_mobile_wrapper">
 <div class="about_mobile web">
     <div class="text">
         <div>
             <h2>Web Development</h2>
-            <a href="webd.html" class="glow ">Learn more</a>
+            <a href="webd.php" class="glow ">Learn more</a>
         </div>
         <img src="Фон 2.png" alt="">
 
@@ -95,7 +104,7 @@
     <div class="text">
         <div>
             <h2>Targeting</h2>
-            <a href="webd.html" class="glow ">Learn more</a>
+            <a href="webd.php" class="glow ">Learn more</a>
         </div>
         <img src="targetgirl.png" alt="">
     </div>
@@ -105,14 +114,8 @@
     <div class="text_wrapper">
         <div class="text parallax_label">
             <h3>Web Development</h3>
-            <p>Take your online presence to the next level with Dreams Agency's Web Development service. Our team of
-                experienced developers specializes in creating custom websites that are tailored to your specific needs
-                and goals. Whether you're looking to build a simple brochure site or a complex e-commerce platform, we
-                have the skills and expertise to bring your vision to life. With our focus on user experience and search
-                engine optimization, you can trust us to create a website that not only looks great, but also drives
-                results for your business. Don't settle for a generic website – contact us today to learn how we can
-                help you create a website that truly reflects your brand and business.</p>
-            <a href="webd.html" class="glow ">Learn more</a>
+            <p><?=translate($query_main,"web_development");?></p>
+            <a href="webd.php" class="glow "><?=translate($query_main,"Learn more");?></a>
         </div>
     </div>
     <div class="d-flex">
@@ -141,8 +144,8 @@
     <div class="text_wrapper">
         <div class="text parallax_label">
             <h3>Targeting</h3>
-            <p>Unlock the full potential of your online advertising with Dreams Agency's Targeting service. Our expert team uses cutting-edge technology to identify and reach your ideal audience, ensuring your ads are seen by the people who are most likely to engage with your brand. With our proven track record of success, you can trust us to help you achieve your business goals and take your online advertising to the next level. Don't miss out on the power of targeted advertising.</p>
-            <a href="targeting.html" class="glow">Learn more</a>
+            <p><?=translate($query_main,"targeting");?></p>
+            <a href="targeting.php" class="glow"><?=translate($query_main,"Learn more");?></a>
         </div>
     </div>
 </div>
@@ -153,7 +156,7 @@
             <div class="itc-slider__wrapper">
                 <div class="itc-slider__items">
                     <div class="itc-slider__item">
-                        <a href="#">
+                        <a href="blog.php?theme=understanding">
                             <div class="img"><img src="audience.webp" alt=""></div>
                             <div class="text">
                                 <p class="date">March 28, 2023</p>
@@ -162,7 +165,7 @@
                         </a>
                     </div>
                     <div class="itc-slider__item">
-                        <a href="#">
+                        <a href="blog.php?theme=power">
                             <div class="img"><img src="targetaudience.webp" alt=""></div>
                             <div class="text">
                                 <p class="date">March 23, 2023</p>
@@ -171,7 +174,7 @@
                         </a>
                     </div>
                     <div class="itc-slider__item">
-                        <a href="#">
+                        <a href="blog.php?theme=strategy">
                             <div class="img"><img src="blogstr.jpeg" alt=""></div>
                             <div class="text">
                                 <p class="date">February 20, 2023 </p>
@@ -180,7 +183,7 @@
                         </a>
                     </div>
                     <div class="itc-slider__item">
-                        <a href="#">
+                        <a href="blog.php?theme=storytelling">
                             <div class="img"><img src="storytelling.png" alt=""></div>
                             <div class="text">
                                 <p class="date">January 18, 2023 </p>
@@ -189,7 +192,7 @@
                         </a>
                     </div>
                     <div class="itc-slider__item">
-                        <a href="#">
+                        <a href="blog.php?theme=multilingual">
                             <div class="img"><img src="multilingual.jpeg" alt=""></div>
                             <div class="text">
                                 <p class="date">January 1, 2023 </p>
@@ -198,7 +201,7 @@
                         </a>
                     </div>
                     <div class="itc-slider__item">
-                        <a href="#">
+                        <a href="blog.php?theme=productivity">
                             <div class="img"><img src="productivity.png" alt=""></div>
                             <div class="text">
                                 <p class="date">December 27, 2022</p>
@@ -289,7 +292,7 @@
 
 
 <script src="js/js.js"></script>
-<script src="js/addon.js?023567886460"></script>
+<script src="js/addon.js?<?=date("Y-m-d H:i:s")?>"></script>
 <script src="js/parallax.js"></script>
 <!-- Scripts -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -297,8 +300,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <!--paroller.js-->
 <script src="dist/jquery.paroller.js"></script>
-<script src="js/extra.js"></script>
-<script src="assets/main.js?522"></script>
+<script src="js/extra.js?<?=date("Y-m-d H:i:s")?>"></script>
+<script src="assets/main.js?<?=date("Y-m-d H:i:s")?>"></script>
+<script src="js/js2.js?<?=date("Y-m-d H:i:s")?>"> </script>
 <script>
     $(document)
         .ready(function () {
@@ -318,6 +322,7 @@
             });
         });
 </script>
+
 </body>
 
 </html>

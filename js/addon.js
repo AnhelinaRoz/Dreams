@@ -9,3 +9,4 @@ function openBurger(e){
     e.querySelector(".burgerContent").classList.toggle("hideBlock");
 
 }
+

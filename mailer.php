@@ -15,7 +15,7 @@ $headers = 'From: webmaster@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 mail($to, $subject, $message, $headers);
-header('Refresh: 5; URL=index.html');
+header('Refresh: 5; URL=index.php');
 echo 'Через 5 секунд Вы будете автоматически перенаправлены на другую страницу.';
 exit;
 
