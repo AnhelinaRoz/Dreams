@@ -95,7 +95,7 @@
             <h2>Web Development</h2>
             <a href="webd.php" class="glow ">Learn more</a>
         </div>
-        <img src="Фон 2.png" alt="">
+        <img src="Background2.png" alt="">
 
 
     </div>

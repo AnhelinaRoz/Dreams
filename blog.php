@@ -37,8 +37,8 @@ if ($query_main->num_rows==0){
         background-size: 524px;
         background-position-x: center;
         background-position-y: -63px;*/
-        /*background: url("*/<?php //=$query["img"]?>/*") no-repeat;*/
-        background: url("24.jpg") no-repeat;
+        background: url("<?=$query["img"]?>") no-repeat;
+        /*background: url("24.png") no-repeat;*/
         background-size: cover;
     }
 </style>
