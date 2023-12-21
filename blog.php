@@ -1,10 +1,11 @@
 <?php
-$page_name = $_GET["theme"];
-$host = "localhost";
-$login = "root";
-$password = "";
-$bd_name = "dreams";
 
+$page_name = $_GET["theme"];
+//$host = "localhost";
+//$login = "root";
+//$password = "";
+//$bd_name = "dreams";
+include ('components/env.php');
 $connect = mysqli_connect($host, $login, $password, $bd_name);
 if (!$connect) {
     die("Connection failed: " . mysqli_connect_error());
