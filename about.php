@@ -1,6 +1,4 @@
-<?php
-print_r($_SESSION);
-?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -13,7 +11,7 @@ print_r($_SESSION);
     <link rel="stylesheet" href="css/style.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="assets/style.css?<?=date("Y-m-d H:i:s")?>">
 
-<!--    <link rel="stylesheet" href="css/webd.css">-->
+    <!--    <link rel="stylesheet" href="css/webd.css">-->
     <link rel="stylesheet" href="css/targeting.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/m.css?<?=date("Y-m-d H:i:s")?>">
     <title>Dream Marketing</title>
@@ -23,19 +21,34 @@ print_r($_SESSION);
 <header class="container_header">
     <?php include ("components/header.php")?>
     <div class="text">
-        <h1>Dreams</h1>
+        <h1 class="moving-gradient">Dreams</h1>
     </div>
     <div class="scroll">
         <p>scroll to discover</p>
     </div>
 </header>
 <section id="targeting" class = "targeting">
-    <?=translate($query_main,"targeting_page_text");?>
+    <?php
+
+switch ($_GET['theme']){
+
+    case 'webd':
+        echo translate($query_main,"webd_page_text");
+        break;
+    case 'targeting':
+        echo translate($query_main,"targeting_page_text");
+        break;
+    default:
+        echo 'page is not defined';
+        break;
+}
+
+    ?>
     <a href="index.php?block=contact"><button><?=translate($query_main,"contact us");?></button></a>
 </section>
 <footer>
     <div class="logo">
-        <img src="res/dreamss.jpg" alt="">
+        <p class="moving-gradient">Dreams</p>
     </div>
     <div class="inf">
         <h3>MARKETING AGENCY DREAMS</h3>

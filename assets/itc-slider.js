@@ -413,6 +413,7 @@ class ItcSlider {
     const widthItem = this.#state.elListItem[0].getBoundingClientRect().width;
     const widthWrapper = this.#state.elWrapper.getBoundingClientRect().width;
     const countActiveEls = Math.round(widthWrapper / widthItem);
+    // const countActiveEls = Math.round(widthWrapper / widthItem);
     if (widthItem === this.#state.width && countActiveEls === this.#state.countActiveItems) {
       return;
     }

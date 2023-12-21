@@ -8,7 +8,7 @@
     transition-duration: .2s;
 }
 .skill .header_nav.background{
-    background: black;
+    background: var(--black);
 }
 .skill .header_nav li{
     background: rgba(40,40,40, 0.2  );
@@ -16,7 +16,7 @@
     padding: 5px;
 }
 .web-development{
-    background-color: black;
+    background-color: var(--black);
     color: white;
     padding: 50px;
 }

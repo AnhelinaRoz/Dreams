@@ -1,5 +1,5 @@
 body{
-    background: black;
+    background: var(--black);
     margin: 0;
 }
 .canvas_background_wrapper {

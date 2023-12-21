@@ -21,7 +21,7 @@ if(innerWidth > 560){
     height = canvas.height = window.innerHeight * 0.75;
 }else {
 
-    width = canvas.width = 800;
+    width = canvas.width = 500;
     height = canvas.height = 700;
 }
 
@@ -82,7 +82,7 @@ gl_FragColor = vec4(mix(vec3(x / WIDTH, y / HEIGHT, 1.0), vec3(0, 0, 0), max(0.0
 return;
 }
 
-gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0);
 }
 
 `;

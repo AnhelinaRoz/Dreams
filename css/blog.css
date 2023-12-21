@@ -1,8 +1,16 @@
+header{
+    position: relative;
+    height: 100vh;
+}
+header canvas{
+    height: auto;
+    width: auto;
+}
 header .text h1{
     font-size: 60px;
 }
 .content{
-    background: black;
+    background: var(--black);
     /*padding: 30px 10px;*/
     padding: 30px 150px;
 }
@@ -42,5 +50,5 @@ ul {
 
 
 footer{
-    background: black;
+    background: var(--black);
 }

@@ -1,4 +1,5 @@
 <?php
+//template settings site
 $host = "localhost";
 $login = "root";
 $password = "";

@@ -25,6 +25,8 @@ if ($query_main->num_rows==0){
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/variable.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/css.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/style.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/blog.css?<?=date("Y-m-d H:i:s")?>">
@@ -33,7 +35,6 @@ if ($query_main->num_rows==0){
 <body>
 <style>
     header{
-        height: 85vh;
         overflow: hidden;
         /*background: url("<?=$query["img"]?>") no-repeat fixed;
         background-size: 524px;
@@ -41,9 +42,9 @@ if ($query_main->num_rows==0){
         background-position-y: -63px;*/
         /*background: url("*/<?php //=$query["img"]?>/*") no-repeat;*/
         /*background: url("24.png") no-repeat;*/
-        background-size: cover;
+        /*background-size: cover;*/
         /*background-attachment: scroll;*/
-        background-image: url("<?=$query["img"]?>");
+        /*background-image: url("*/<?php //=$query["img"]?>/*");*/
         background-repeat: no-repeat;
         background-attachment: fixed;
     }

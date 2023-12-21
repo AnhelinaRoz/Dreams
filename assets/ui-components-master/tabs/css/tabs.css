@@ -14,7 +14,7 @@
 .tabs__btn {
   padding: 0.5rem 0.75rem;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   text-align: center;
   flex-shrink: 0;
   flex-grow: 1;

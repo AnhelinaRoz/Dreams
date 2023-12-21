@@ -9,6 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/variable.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/webd.css?093">
@@ -70,7 +71,7 @@
         </ul>
     </div>
 </footer>
-<script src="js/autre.js?258"></script>
+<script src="js/autre.js?<?=date("Y-m-d H:i:s")?>"></script>
 </body>
 </html>
 

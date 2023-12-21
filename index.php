@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/itc-slider.css">
     <!-- JavaScript -->
     <script src="assets/itc-slider.js?<?=date("Y-m-d H:i:s")?>" defer></script>
+    <link rel="stylesheet" href="css/variable.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/css.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/style.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="assets/style.css?<?=date("Y-m-d H:i:s")?>">
@@ -29,6 +30,7 @@
     console.log(get)
 </script>
 <header id="home">
+
     <div class="canvas_background_wrapper">
         <canvas class="paints canvas_background" width="11" height="122"></canvas>
     </div>
@@ -73,7 +75,7 @@
 <!--        </div>-->
 <!--    </div>-->
     <div class="text">
-        <h1>Dreams</h1>
+        <h1 class="moving-gradient">Dreams</h1>
         <a href="https://uahelp.monobank.ua/">#<span class="blue">Support</span><span class="yellow">Ukraine</span></a>
     </div>
     <div class="scroll">
@@ -88,13 +90,14 @@
     <h2 class="title2">About Us</h2>
    <p><?=translate($query_main,"about_text_blog");?></p>
 </div>
+<div id="about"></div>
 <div class="about_mobile_wrapper">
 
 <div class="about_mobile web">
     <div class="text">
         <div>
             <h2>Web Development</h2>
-            <a href="webd.php" class="glow ">Learn more</a>
+            <a href="about.php?theme=webd" class="glow ">Learn more</a>
         </div>
         <img src="Background2.png" alt="">
 
@@ -105,18 +108,18 @@
     <div class="text">
         <div>
             <h2>Targeting</h2>
-            <a href="webd.php" class="glow ">Learn more</a>
+            <a href="about.php?theme=targeting" class="glow ">Learn more</a>
         </div>
         <img src="targetgirl.png" alt="">
     </div>
 </div>
 </div>
-<div id="about" class="about_pc service parallax parallax_wrapper">
+<div class="about_pc service parallax parallax_wrapper">
     <div class="text_wrapper">
         <div class="text parallax_label">
             <h3>Web Development</h3>
             <p><?=translate($query_main,"web_development");?></p>
-            <a href="webd.php" class="glow "><?=translate($query_main,"Learn more");?></a>
+            <a href="about.php?theme=webd" class="glow "><?=translate($query_main,"Learn more");?></a>
         </div>
     </div>
     <div class="d-flex">
@@ -146,7 +149,7 @@
         <div class="text parallax_label">
             <h3>Targeting</h3>
             <p><?=translate($query_main,"targeting");?></p>
-            <a href="targeting.php" class="glow"><?=translate($query_main,"Learn more");?></a>
+            <a href="about.php?theme=targeting" class="glow"><?=translate($query_main,"Learn more");?></a>
         </div>
     </div>
 </div>
@@ -279,9 +282,10 @@
 </div>
 <footer>
     <div class="logo">
-        <img src="res/dreamss.jpg" alt="">
+        <p class="moving-gradient">Dreams</p>
     </div>
     <div class="inf">
+
         <h3>MARKETING AGENCY DREAMS</h3>
         <ul>
             <li>Geneva, Switzerland</li>
