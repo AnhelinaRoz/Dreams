@@ -67,9 +67,10 @@ if ($query_main->num_rows==0){
 </div>
 <footer>
     <div class="logo">
-        <img src="res/dreamss.jpg" alt="">
+        <p class="moving-gradient">Dreams</p>
     </div>
     <div class="inf">
+
         <h3>MARKETING AGENCY DREAMS</h3>
         <ul>
             <li>Geneva, Switzerland</li>

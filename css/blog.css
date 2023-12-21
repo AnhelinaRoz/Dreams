@@ -8,6 +8,11 @@ header canvas{
 }
 header .text h1{
     font-size: 60px;
+    background-image: linear-gradient(to right, #7a5cff, #50a7f2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 .content{
     background: var(--black);

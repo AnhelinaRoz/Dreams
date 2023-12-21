@@ -87,7 +87,7 @@ $nav_links = [
     <div class="menu_mobile_navigation">
         <div class="btn_cross">
             <div class="name">
-                <p>Marketing agency</p>
+                <p class="moving-gradient">Marketing agency</p>
             </div>
             <img src="res/cross2.svg" alt="" onclick="openBurger()">
         </div>
@@ -105,14 +105,14 @@ $nav_links = [
                 ?>
                 <li><a href="<?=$link ?>" onclick="openBurger()"><?= translate($query_main,  $item['name']); ?></a></li>
             <?php } ?>
-             <li class="hr"></li>
-
-            <li>
-                <img src="res/call.svg" alt="">
-                <a href="#contact"><?= translate($query_main, "contact us"); ?></a></li>
-            <li>
-                <img src="res/mail.png" alt="">
-                <a href="#contact">info@dreamsagency.net</a></li>
+<!--             <li class="hr"></li>-->
+<!---->
+<!--            <li>-->
+<!--                <img src="res/call.svg" alt="">-->
+<!--                <a href="#contact">--><?php //= translate($query_main, "contact us"); ?><!--</a></li>-->
+<!--            <li>-->
+<!--                <img src="res/mail.png" alt="">-->
+<!--                <a href="#contact">info@dreamsagency.net</a></li>-->
         </ul>
     </div>
 </div>
