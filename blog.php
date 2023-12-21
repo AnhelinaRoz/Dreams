@@ -24,6 +24,7 @@ if ($query_main->num_rows==0){
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/css.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/style.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/blog.css?<?=date("Y-m-d H:i:s")?>">
     <title><?= $query["name"] ?></title>
@@ -31,23 +32,33 @@ if ($query_main->num_rows==0){
 <body>
 <style>
     header{
-        height: 100vh;
+        height: 85vh;
         overflow: hidden;
         /*background: url("<?=$query["img"]?>") no-repeat fixed;
         background-size: 524px;
         background-position-x: center;
         background-position-y: -63px;*/
-        background: url("<?=$query["img"]?>") no-repeat;
+        /*background: url("*/<?php //=$query["img"]?>/*") no-repeat;*/
         /*background: url("24.png") no-repeat;*/
         background-size: cover;
+        /*background-attachment: scroll;*/
+        background-image: url("<?=$query["img"]?>");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 </style>
 <header>
+    <div class="canvas_background_wrapper">
+        <canvas class="paints canvas_background" width="11" height="122"></canvas>
+    </div>
     <?php include ("components/header.php")?>
+    <div class="text">
+        <h1><?= $query["name"] ?></h1>
+    </div>
     <!--    <img src="audience.webp" alt="">-->
 </header>
 <div class="content">
-    <h1><?= $query["name"] ?></h1>
+
     <div class="text">
         <?= $query["text"] ?>
     </div>
@@ -65,6 +76,7 @@ if ($query_main->num_rows==0){
         </ul>
     </div>
 </footer>
+<script src="js/js.js"></script>
 </body>
 </html>
 

@@ -89,6 +89,7 @@
    <p><?=translate($query_main,"about_text_blog");?></p>
 </div>
 <div class="about_mobile_wrapper">
+
 <div class="about_mobile web">
     <div class="text">
         <div>
@@ -294,6 +295,7 @@
 <script src="js/js.js"></script>
 <script src="js/addon.js?<?=date("Y-m-d H:i:s")?>"></script>
 <script src="js/parallax.js"></script>
+<script src="js/scrolling.js?<?=date("Y-m-d H:i:s")?>"> </script>
 <!-- Scripts -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- jQuery -->

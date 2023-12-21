@@ -6,7 +6,7 @@ window.addEventListener('keydown', e => {
         splatStack.push(parseInt(Math.random() * 20) + 5);
 });
 function openBurger(e){
-    e.querySelector(".burgerContent").classList.toggle("hideBlock");
+    document.querySelector(".menu_mobile_navigation").classList.toggle("active")
 
 }
 

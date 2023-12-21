@@ -14,10 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87596e47-d6a9-44f1-b297-76fb928a7697" name="Default Changelist" comment="ок">
+      <change afterPath="$PROJECT_DIR$/res/call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cross2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/mail.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Фон 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Background2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/addon.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/addon.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,21 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/Dreams",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/Dreams/res&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
       <recent name="D:\GitHub\Dreams" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -86,7 +102,10 @@
       <workItem from="1679860090368" duration="30816000" />
       <workItem from="1682874462676" duration="3583000" />
       <workItem from="1684164983184" duration="2378000" />
-      <workItem from="1684252734261" duration="60461000" />
+      <workItem from="1684252734261" duration="73162000" />
+      <workItem from="1693677410193" duration="6437000" />
+      <workItem from="1696368554230" duration="587000" />
+      <workItem from="1696490506108" duration="10358000" />
     </task>
     <task id="LOCAL-00001" summary="ок">
       <created>1674405113289</created>
@@ -151,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693582464580</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ок">
+      <created>1693584290148</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693584290148</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
