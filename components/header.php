@@ -7,10 +7,8 @@ if (isset($_GET["language"])) {
 }
 //$language_get = $_GET["language"] ? $_GET["language"] : 2;
 
-$host = "localhost";
-$login = "root";
-$password = "";
-$bd_name = "dreams";
+include ("env.php");
+
 
 $connect = mysqli_connect($host, $login, $password, $bd_name);
 if (!$connect) {
