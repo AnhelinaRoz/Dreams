@@ -13,7 +13,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/itc-slider.css">
     <!-- JavaScript -->
-    <script src="assets/itc-slider.js?<?=date("Y-m-d H:i:s")?>" defer></script>
+<!--    <script src="assets/itc-slider.js?--><?php //=date("Y-m-d H:i:s")?><!--" defer></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="dist/jquery.paroller.js"></script>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/variable.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/css.css?<?=date("Y-m-d H:i:s")?>">
     <link rel="stylesheet" href="css/style.css?<?=date("Y-m-d H:i:s")?>">
@@ -153,74 +158,97 @@
         </div>
     </div>
 </div>
-<div id="blogy" class="blog">
+
+
+
+<div id="blogy" class="blog blog2">
     <div class="container">
         <h2 class="title2">Blog</h2>
-        <div class="itc-slider" data-slider="itc-slider" data-autoplay="false" data-loop="1000">
-            <div class="itc-slider__wrapper">
-                <div class="itc-slider__items">
-                    <div class="itc-slider__item">
-                        <a href="blog.php?theme=understanding">
-                            <div class="img"><img src="audience.webp" alt=""></div>
-                            <div class="text">
-                                <p class="date">March 28, 2023</p>
-                                <h3>Understanding Your Target Audience: Tips and Strategies</h3>
-                            </div>
-                        </a>
+        <div class="your-slider sponsor-list2">
+            <div class="card">
+                <a href="blog.php?theme=understanding">
+                    <div class="img"><img src="audience.webp" alt=""></div>
+                    <div class="text">
+                        <p class="date">March 28, 2023</p>
+                        <h3>Understanding Your Target Audience: Tips and Strategies</h3>
                     </div>
-                    <div class="itc-slider__item">
-                        <a href="blog.php?theme=power">
-                            <div class="img"><img src="targetaudience.webp" alt=""></div>
-                            <div class="text">
-                                <p class="date">March 23, 2023</p>
-                                <h3>The Power of Personalization: Tips for Customizing Your Website to Your Target Audience</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="itc-slider__item">
-                        <a href="blog.php?theme=strategy">
-                            <div class="img"><img src="blogstr.jpeg" alt=""></div>
-                            <div class="text">
-                                <p class="date">February 20, 2023 </p>
-                                <h3>How to Create an Effective Blog Strategy for Your Website</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="itc-slider__item">
-                        <a href="blog.php?theme=storytelling">
-                            <div class="img"><img src="storytelling.png" alt=""></div>
-                            <div class="text">
-                                <p class="date">January 18, 2023 </p>
-                                <h3>The Power of Storytelling in Website Content: How to Engage Your Audience and Build Connections</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="itc-slider__item">
-                        <a href="blog.php?theme=multilingual">
-                            <div class="img"><img src="multilingual.jpeg" alt=""></div>
-                            <div class="text">
-                                <p class="date">January 1, 2023 </p>
-                                <h3>The Benefits and Challenges of Creating a Multilingual Website</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="itc-slider__item">
-                        <a href="blog.php?theme=productivity">
-                            <div class="img"><img src="productivity.png" alt=""></div>
-                            <div class="text">
-                                <p class="date">December 27, 2022</p>
-                                <h3>10 Ways to Boost Your Productivity at Work</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                </a>
             </div>
 
-            <button class="itc-slider__btn itc-slider__btn_prev"></button>
-            <button class="itc-slider__btn itc-slider__btn_next"></button>
+            <div class="card">
+                <a href="blog.php?theme=power">
+                    <div class="img"><img src="targetaudience.webp" alt=""></div>
+                    <div class="text">
+                        <p class="date">March 23, 2023</p>
+                        <h3>The Power of Personalization: Tips for Customizing Your Website to Your Target Audience</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="blog.php?theme=strategy">
+                    <div class="img"><img src="blogstr.jpeg" alt=""></div>
+                    <div class="text">
+                        <p class="date">February 20, 2023 </p>
+                        <h3>How to Create an Effective Blog Strategy for Your Website</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="blog.php?theme=storytelling">
+                    <div class="img"><img src="storytelling.png" alt=""></div>
+                    <div class="text">
+                        <p class="date">January 18, 2023 </p>
+                        <h3>The Power of Storytelling in Website Content: How to Engage Your Audience and Build Connections</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="blog.php?theme=multilingual">
+                    <div class="img"><img src="multilingual.jpeg" alt=""></div>
+                    <div class="text">
+                        <p class="date">January 1, 2023 </p>
+                        <h3>The Benefits and Challenges of Creating a Multilingual Website</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="blog.php?theme=productivity">
+                    <div class="img"><img src="productivity.png" alt=""></div>
+                    <div class="text">
+                        <p class="date">December 27, 2022</p>
+                        <h3>10 Ways to Boost Your Productivity at Work</h3>
+                    </div>
+                </a>
+            </div>
         </div>
+
     </div>
 </div>
+<style>
+    .your-slider .img{
+        height: 233px;
+        width: 100%;
+    }
+    .your-slider .img img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .your-slider .card{
+        padding: 35px 20px;
+    }
+    .slick-list{
+        padding: 0 15px;
+    }
+    .your-slider .slick-prev:before, .your-slider .slick-next:before {
+        color: #383737;
+        font-size: 40px;
+        content: '>';
+    }
+    .your-slider .slick-prev:before{
+        content: '<';
+    }
+</style>
 <!--<div class="blog-block">-->
 <!--    <h2>Blog</h2>-->
 <!--    <ul>-->
@@ -303,12 +331,13 @@
 <!-- Scripts -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+
 <!--paroller.js-->
-<script src="dist/jquery.paroller.js"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/extra.js?<?=date("Y-m-d H:i:s")?>"></script>
 <script src="assets/main.js?<?=date("Y-m-d H:i:s")?>"></script>
 <script src="js/js2.js?<?=date("Y-m-d H:i:s")?>"> </script>
+<script src="js/library_controls.js?<?=date("Y-m-d H:i:s")?>"> </script>
 <script>
     $(document)
         .ready(function () {

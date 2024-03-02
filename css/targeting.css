@@ -22,10 +22,13 @@ section li:before {
     content: '• ';
     color: #2AA5A0;
 }
-
-button {
-    margin: auto;
+.targeting a{
+    text-align: center;
     display: block;
+}
+.targeting button {
+    margin-top: 25px;
+    display: inline-block;
     padding: 10px 35px;
     border-radius: 4px;
     background-image: linear-gradient(90deg, #9453e3, #2AA5A0);
